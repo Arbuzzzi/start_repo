@@ -1,0 +1,29 @@
+.modalMain {
+  .modal-dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+    // align-items: center;
+
+  }
+
+  &-content {
+    position: relative;
+    border-radius: 3px;
+    background-color: $light-color;
+  }
+
+  &-close {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    padding: 0;
+    img {
+      @include sqwer(12px);
+      
+    }
+
+  }
+}

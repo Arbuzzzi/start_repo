@@ -1,0 +1,79 @@
+// Миксины 
+
+@mixin hover($size-lg:1024px) {
+  @include minW($size-lg) {
+    &:hover { 
+      @content
+    }    
+  }
+}
+
+@mixin listUnstyle {
+  padding-left: 0;
+  list-style: none;
+}
+
+@mixin mA(){
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin sqwerMaxSize($size) {
+  width: 100%;
+  height: $size;
+  max-height: $size;
+  max-width: $size;
+}
+
+@mixin bgImgFreeurl($url, $name) {
+  background-image: url(#{$url+$name});
+}
+
+@mixin sqwer($size){ // квадрат 
+  height: $size;
+  width: $size;
+}
+
+@mixin circle($size) { // круг
+  @include sqwer($size);
+  border-radius: 50%;
+}
+
+@mixin maxW($size) {
+  @media screen and (max-width: $size){
+    @content
+  }
+}
+
+@mixin minW($size) {
+  @media screen and (min-width: $size){
+    @content
+  }
+}
+
+@mixin after($content:'') {
+  &:after {
+    @include pseudo($content);
+    @content
+  }
+}
+
+@mixin before($content:'') {
+  &:before {
+    @include pseudo($content);
+    @content
+  }
+}
+
+@mixin pseudo($content:'') {
+  content: '#{$content}';
+  position: absolute;
+  display: block;
+}
+
+@mixin bgSection($url) {
+  background-image: url($url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

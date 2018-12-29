@@ -1,0 +1,52 @@
+// @import "smart-grid";
+
+// ==== Карта ЦВЕТОВ ====
+
+// Базовые цаета
+$basic-color: #000000;
+$light-color: #ffffff;
+$dark-color: #6d6d6d; 
+$special-color: #ffde3e; 
+$error-color: #FF4F4F; 
+$valid-color: #ffffff; 
+
+// Текст
+$text-color: #343434;
+$text-light-color: $light-color;
+$text-dark-color: $dark-color;
+$text-special-color: $dark-color;
+
+// Заголовки
+$title-color: $basic-color;
+$title-light-color: #6d6d6d;
+$title-dark-color: #343434;
+$title-special-color: #343434;
+
+// Кнопки 
+$btn-color: $light-color;
+$btn-bg-color: $dark-color;
+$btn-border-color: $btn-color;
+
+$btn-hov-color: $btn-bg-color;
+$btn-hov-bg-color: $btn-color;
+$btn-hov-border-color: $btn-hov-color;
+
+// Ссылки
+$link-color: #B5AB0C;
+$link-bg-color: transparent;
+$link-border-color: $link-color;
+
+$link-hov-color: darken($link-color, 20%);
+$link-hov-bg-color: transparent;
+$link-hov-border-color: darken($link-color, 20%);
+
+// Особая ссылка
+$link-special-color: $link-color;
+$link-special-bg-color: transparent;
+$link-special-border-color: $link-special-color;
+
+$link-special-hov-color: darken($link-special-color, 20%);
+$link-special-hov-bg-color: transparent;
+$link-special-hov-border-color: darken($link-special-color, 20%);
+
+// РАЗМЕРЫ

@@ -1,0 +1,141 @@
+@import "_variables.scss";
+
+a:hover,
+a:focus,
+a:active,
+a {
+  text-decoration: none;
+}
+
+button,
+a,
+input,
+button:focus,
+input:focus,
+a:focus
+textarea:focus {
+  outline: none;
+}
+
+a,
+button,
+label, {
+  cursor: pointer;
+}
+
+a,
+button,
+label,
+input {
+  background-color: transparent;
+  border: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // font-family: 'Gotham Pro', Arial, sans-serif;
+  // transition: 0.5s;
+}
+
+
+img{
+  max-width: 100%;
+}
+
+body.bs-fix {
+  transition: none;
+  padding: 0 !important;
+  overflow: auto !important;
+}
+
+.hide {
+  display: none;
+}
+
+// если используем smart-grid
+
+// .wrapper {
+//   @include wrapper();
+// }
+
+
+// .row {
+//   @include row-flex();
+// }
+
+
+// .col {
+//   @include col();
+// }
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.section-title, 
+.title, {
+  // cursor: default;
+  @include before() {
+    
+  }
+}
+
+p, .section-text, .text, div {
+  color: $text-color;
+  &.text-dark {
+    // color: $text-dark-color;
+  }
+}
+
+
+h2, .section-title {
+  @include sm-block() {
+    font-size: 24px;
+    margin-bottom: 70px;
+  }
+
+
+  &:after {
+
+  }
+
+  span {
+    color: $title-special-color;
+    @include sm-block() {
+    }
+  }
+}
+
+
+section, .section {
+  padding: 110px 0 30px;
+  @include sm-block() {
+    padding-top: 70px;
+  }
+}
+
+.section_special-bg {
+  &:before, &:after {
+  }
+  &:after {
+  }
+}
+
+.section-dark {
+  background-color: #000;
+
+
+  h2, h1, .section-title, p, div {
+    color: $light-color;
+  }
+
+
+  .section-title {
+    span {
+    }
+  }
+}
